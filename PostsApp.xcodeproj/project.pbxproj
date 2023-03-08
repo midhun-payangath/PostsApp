@@ -16,6 +16,25 @@
 		5219939429B925420058F9BC /* PostsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219939329B925420058F9BC /* PostsAppTests.swift */; };
 		5219939E29B925420058F9BC /* PostsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219939D29B925420058F9BC /* PostsAppUITests.swift */; };
 		521993A029B925420058F9BC /* PostsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219939F29B925420058F9BC /* PostsAppUITestsLaunchTests.swift */; };
+		521993B129B92D610058F9BC /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993B029B92D610058F9BC /* Configuration.swift */; };
+		521993B529B92DD90058F9BC /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993B429B92DD90058F9BC /* AppConstant.swift */; };
+		521993B729B92DE30058F9BC /* StringContant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993B629B92DE30058F9BC /* StringContant.swift */; };
+		521993BA29B92E6D0058F9BC /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993B929B92E6D0058F9BC /* Keychain.swift */; };
+		521993BC29B92EB90058F9BC /* APIRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993BB29B92EB90058F9BC /* APIRequestBuilder.swift */; };
+		521993BE29B92EC30058F9BC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993BD29B92EC30058F9BC /* APIError.swift */; };
+		521993C029B92ECA0058F9BC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993BF29B92ECA0058F9BC /* APIService.swift */; };
+		521993C329B92F440058F9BC /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993C229B92F440058F9BC /* Extension+View.swift */; };
+		521993C529B92F530058F9BC /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993C429B92F530058F9BC /* Extension+Color.swift */; };
+		521993C829B92FAA0058F9BC /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993C729B92FAA0058F9BC /* ButtonModifier.swift */; };
+		521993CA29B92FC20058F9BC /* LoaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993C929B92FC20058F9BC /* LoaderModifier.swift */; };
+		521993CC29B92FC90058F9BC /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993CB29B92FC90058F9BC /* TextFieldModifier.swift */; };
+		521993CE29B92FD30058F9BC /* ViewModelErrorAlertViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993CD29B92FD30058F9BC /* ViewModelErrorAlertViewModifier.swift */; };
+		521993D329B930E90058F9BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993D229B930E90058F9BC /* LoginView.swift */; };
+		521993D529B931040058F9BC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993D429B931040058F9BC /* LoginViewModel.swift */; };
+		521993D729B9310F0058F9BC /* LoginViewModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993D629B9310F0058F9BC /* LoginViewModelError.swift */; };
+		521993D929B9311C0058F9BC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993D829B9311C0058F9BC /* UserModel.swift */; };
+		521993DB29B9317F0058F9BC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993DA29B9317F0058F9BC /* LoginRequest.swift */; };
+		521993DD29B931860058F9BC /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993DC29B931860058F9BC /* LoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +67,28 @@
 		5219939929B925420058F9BC /* PostsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5219939D29B925420058F9BC /* PostsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAppUITests.swift; sourceTree = "<group>"; };
 		5219939F29B925420058F9BC /* PostsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		521993AE29B92D320058F9BC /* UAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UAT.xcconfig; sourceTree = "<group>"; };
+		521993AF29B92D430058F9BC /* RELEASE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RELEASE.xcconfig; sourceTree = "<group>"; };
+		521993B029B92D610058F9BC /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		521993B329B92D920058F9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		521993B429B92DD90058F9BC /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		521993B629B92DE30058F9BC /* StringContant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringContant.swift; sourceTree = "<group>"; };
+		521993B929B92E6D0058F9BC /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		521993BB29B92EB90058F9BC /* APIRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestBuilder.swift; sourceTree = "<group>"; };
+		521993BD29B92EC30058F9BC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		521993BF29B92ECA0058F9BC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		521993C229B92F440058F9BC /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		521993C429B92F530058F9BC /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		521993C729B92FAA0058F9BC /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		521993C929B92FC20058F9BC /* LoaderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderModifier.swift; sourceTree = "<group>"; };
+		521993CB29B92FC90058F9BC /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		521993CD29B92FD30058F9BC /* ViewModelErrorAlertViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelErrorAlertViewModifier.swift; sourceTree = "<group>"; };
+		521993D229B930E90058F9BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		521993D429B931040058F9BC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		521993D629B9310F0058F9BC /* LoginViewModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelError.swift; sourceTree = "<group>"; };
+		521993D829B9311C0058F9BC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		521993DA29B9317F0058F9BC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		521993DC29B931860058F9BC /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +139,17 @@
 		5219937C29B9253E0058F9BC /* PostsApp */ = {
 			isa = PBXGroup;
 			children = (
+				521993B329B92D920058F9BC /* Info.plist */,
 				5219937D29B9253E0058F9BC /* PostsAppApp.swift */,
-				5219937F29B9253E0058F9BC /* ContentView.swift */,
 				5219938129B925420058F9BC /* Assets.xcassets */,
-				5219938629B925420058F9BC /* Persistence.swift */,
-				5219938829B925420058F9BC /* PostsApp.xcdatamodeld */,
+				5219937F29B9253E0058F9BC /* ContentView.swift */,
+				521993B229B92D750058F9BC /* Config */,
+				521993B829B92E4D0058F9BC /* Constant */,
+				521993C629B92F8D0058F9BC /* Extensions */,
+				521993D129B930A70058F9BC /* Helpers */,
+				521993D029B9305D0058F9BC /* Persistence */,
+				521993CF29B930130058F9BC /* ViewModifier */,
+				521993DF29B931DB0058F9BC /* Login */,
 				5219938329B925420058F9BC /* Preview Content */,
 			);
 			path = PostsApp;
@@ -131,6 +178,94 @@
 				5219939F29B925420058F9BC /* PostsAppUITestsLaunchTests.swift */,
 			);
 			path = PostsAppUITests;
+			sourceTree = "<group>";
+		};
+		521993B229B92D750058F9BC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				521993AE29B92D320058F9BC /* UAT.xcconfig */,
+				521993AF29B92D430058F9BC /* RELEASE.xcconfig */,
+				521993B029B92D610058F9BC /* Configuration.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		521993B829B92E4D0058F9BC /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				521993B429B92DD90058F9BC /* AppConstant.swift */,
+				521993B629B92DE30058F9BC /* StringContant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		521993C129B92F000058F9BC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				521993BB29B92EB90058F9BC /* APIRequestBuilder.swift */,
+				521993BD29B92EC30058F9BC /* APIError.swift */,
+				521993BF29B92ECA0058F9BC /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		521993C629B92F8D0058F9BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				521993C229B92F440058F9BC /* Extension+View.swift */,
+				521993C429B92F530058F9BC /* Extension+Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		521993CF29B930130058F9BC /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				521993C729B92FAA0058F9BC /* ButtonModifier.swift */,
+				521993C929B92FC20058F9BC /* LoaderModifier.swift */,
+				521993CB29B92FC90058F9BC /* TextFieldModifier.swift */,
+				521993CD29B92FD30058F9BC /* ViewModelErrorAlertViewModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		521993D029B9305D0058F9BC /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				5219938629B925420058F9BC /* Persistence.swift */,
+				5219938829B925420058F9BC /* PostsApp.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		521993D129B930A70058F9BC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				521993B929B92E6D0058F9BC /* Keychain.swift */,
+				521993C129B92F000058F9BC /* Network */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		521993DE29B931B20058F9BC /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				521993DA29B9317F0058F9BC /* LoginRequest.swift */,
+				521993DC29B931860058F9BC /* LoginService.swift */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		521993DF29B931DB0058F9BC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				521993DE29B931B20058F9BC /* LoginService */,
+				521993D829B9311C0058F9BC /* UserModel.swift */,
+				521993D229B930E90058F9BC /* LoginView.swift */,
+				521993D429B931040058F9BC /* LoginViewModel.swift */,
+				521993D629B9310F0058F9BC /* LoginViewModelError.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +399,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				5219938729B925420058F9BC /* Persistence.swift in Sources */,
+				521993D929B9311C0058F9BC /* UserModel.swift in Sources */,
+				521993B729B92DE30058F9BC /* StringContant.swift in Sources */,
+				521993CA29B92FC20058F9BC /* LoaderModifier.swift in Sources */,
+				521993B129B92D610058F9BC /* Configuration.swift in Sources */,
+				521993BE29B92EC30058F9BC /* APIError.swift in Sources */,
+				521993C029B92ECA0058F9BC /* APIService.swift in Sources */,
 				5219938029B9253E0058F9BC /* ContentView.swift in Sources */,
+				521993CE29B92FD30058F9BC /* ViewModelErrorAlertViewModifier.swift in Sources */,
+				521993C529B92F530058F9BC /* Extension+Color.swift in Sources */,
+				521993BC29B92EB90058F9BC /* APIRequestBuilder.swift in Sources */,
+				521993C829B92FAA0058F9BC /* ButtonModifier.swift in Sources */,
+				521993D729B9310F0058F9BC /* LoginViewModelError.swift in Sources */,
+				521993DD29B931860058F9BC /* LoginService.swift in Sources */,
+				521993CC29B92FC90058F9BC /* TextFieldModifier.swift in Sources */,
+				521993D329B930E90058F9BC /* LoginView.swift in Sources */,
+				521993B529B92DD90058F9BC /* AppConstant.swift in Sources */,
+				521993BA29B92E6D0058F9BC /* Keychain.swift in Sources */,
 				5219937E29B9253E0058F9BC /* PostsAppApp.swift in Sources */,
+				521993C329B92F440058F9BC /* Extension+View.swift in Sources */,
+				521993D529B931040058F9BC /* LoginViewModel.swift in Sources */,
 				5219938A29B925420058F9BC /* PostsApp.xcdatamodeld in Sources */,
+				521993DB29B9317F0058F9BC /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +573,7 @@
 		};
 		521993A429B925420058F9BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521993AE29B92D320058F9BC /* UAT.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,6 +582,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PostsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +603,7 @@
 		};
 		521993A529B925420058F9BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521993AF29B92D430058F9BC /* RELEASE.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +612,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PostsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -475,6 +633,7 @@
 		};
 		521993A729B925420058F9BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521993AE29B92D320058F9BC /* UAT.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +653,7 @@
 		};
 		521993A829B925420058F9BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521993AF29B92D430058F9BC /* RELEASE.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +673,7 @@
 		};
 		521993AA29B925420058F9BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521993AE29B92D320058F9BC /* UAT.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +691,7 @@
 		};
 		521993AB29B925420058F9BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521993AF29B92D430058F9BC /* RELEASE.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
