@@ -11,7 +11,7 @@ import Combine
 class LoginViewModel: ObservableObject {
     
     private var bindings = Set<AnyCancellable>()
-    private let loginService = LoginService()
+    let loginService = LoginService()
     @Published var isLoading: Bool = false
     @Published var viewModelError: LoginViewModelError?
     @Published var userId = ""
