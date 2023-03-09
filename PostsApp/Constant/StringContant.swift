@@ -16,5 +16,10 @@ struct StringContant {
         static let error = "Error"
         static let pleaseEnterValidUserId = "Please enter a valid User ID"
         static let loading = "Loading..."
+        static let sessionExpired  = "Session expired"
+        static let pleaseLogoutAndLoginAgain = "Please logout and login again"
+        static let myPosts = "My Posts"
+        static let logout = "Logout"
+        static let selectOption = "Select an option"
     }
 }

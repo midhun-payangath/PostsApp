@@ -44,6 +44,7 @@ struct LoginView: View {
                 .padding(20)
             }
             .navigationDestination(isPresented: $loginViewModel.loginSuccess) {
+                PostListView()
             }
         }
         .loaderViewWrapper(isLoading: loginViewModel.isLoading)

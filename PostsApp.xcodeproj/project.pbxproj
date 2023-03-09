@@ -36,6 +36,15 @@
 		521993DB29B9317F0058F9BC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993DA29B9317F0058F9BC /* LoginRequest.swift */; };
 		521993DD29B931860058F9BC /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993DC29B931860058F9BC /* LoginService.swift */; };
 		521993E129B9CBBE0058F9BC /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993E029B9CBBE0058F9BC /* LoginTests.swift */; };
+		521993E329B9D3110058F9BC /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993E229B9D3110058F9BC /* PostRequest.swift */; };
+		521993E529B9D3290058F9BC /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993E429B9D3290058F9BC /* PostService.swift */; };
+		521993E729B9D3310058F9BC /* FilterTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993E629B9D3310058F9BC /* FilterTabView.swift */; };
+		521993E929B9D33C0058F9BC /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993E829B9D33C0058F9BC /* PostModel.swift */; };
+		521993EB29B9D3430058F9BC /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993EA29B9D3430058F9BC /* PostRowView.swift */; };
+		521993ED29B9D34B0058F9BC /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993EC29B9D34B0058F9BC /* PostListView.swift */; };
+		521993EF29B9D3540058F9BC /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993EE29B9D3540058F9BC /* PostListViewModel.swift */; };
+		521993F129B9D35E0058F9BC /* PostListViewModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993F029B9D35D0058F9BC /* PostListViewModelError.swift */; };
+		521993F329B9D45F0058F9BC /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993F229B9D45E0058F9BC /* HeartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +100,15 @@
 		521993DA29B9317F0058F9BC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		521993DC29B931860058F9BC /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		521993E029B9CBBE0058F9BC /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		521993E229B9D3110058F9BC /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		521993E429B9D3290058F9BC /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		521993E629B9D3310058F9BC /* FilterTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTabView.swift; sourceTree = "<group>"; };
+		521993E829B9D33C0058F9BC /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		521993EA29B9D3430058F9BC /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
+		521993EC29B9D34B0058F9BC /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		521993EE29B9D3540058F9BC /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		521993F029B9D35D0058F9BC /* PostListViewModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelError.swift; sourceTree = "<group>"; };
+		521993F229B9D45E0058F9BC /* HeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +170,7 @@
 				521993D029B9305D0058F9BC /* Persistence */,
 				521993CF29B930130058F9BC /* ViewModifier */,
 				521993DF29B931DB0058F9BC /* Login */,
+				521993F629BA07FB0058F9BC /* Posts */,
 				5219938329B925420058F9BC /* Preview Content */,
 			);
 			path = PostsApp;
@@ -245,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				521993B929B92E6D0058F9BC /* Keychain.swift */,
+				521993F229B9D45E0058F9BC /* HeartView.swift */,
 				521993C129B92F000058F9BC /* Network */,
 			);
 			path = Helpers;
@@ -269,6 +289,37 @@
 				521993D629B9310F0058F9BC /* LoginViewModelError.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		521993F429B9D7C20058F9BC /* PostService */ = {
+			isa = PBXGroup;
+			children = (
+				521993E229B9D3110058F9BC /* PostRequest.swift */,
+				521993E429B9D3290058F9BC /* PostService.swift */,
+			);
+			path = PostService;
+			sourceTree = "<group>";
+		};
+		521993F529BA07EA0058F9BC /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				521993E629B9D3310058F9BC /* FilterTabView.swift */,
+				521993E829B9D33C0058F9BC /* PostModel.swift */,
+				521993EA29B9D3430058F9BC /* PostRowView.swift */,
+				521993EC29B9D34B0058F9BC /* PostListView.swift */,
+				521993EE29B9D3540058F9BC /* PostListViewModel.swift */,
+				521993F029B9D35D0058F9BC /* PostListViewModelError.swift */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		521993F629BA07FB0058F9BC /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				521993F429B9D7C20058F9BC /* PostService */,
+				521993F529BA07EA0058F9BC /* PostList */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +452,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521993E729B9D3310058F9BC /* FilterTabView.swift in Sources */,
+				521993E529B9D3290058F9BC /* PostService.swift in Sources */,
+				521993EF29B9D3540058F9BC /* PostListViewModel.swift in Sources */,
 				5219938729B925420058F9BC /* Persistence.swift in Sources */,
 				521993D929B9311C0058F9BC /* UserModel.swift in Sources */,
 				521993B729B92DE30058F9BC /* StringContant.swift in Sources */,
@@ -408,6 +462,7 @@
 				521993B129B92D610058F9BC /* Configuration.swift in Sources */,
 				521993BE29B92EC30058F9BC /* APIError.swift in Sources */,
 				521993C029B92ECA0058F9BC /* APIService.swift in Sources */,
+				521993EB29B9D3430058F9BC /* PostRowView.swift in Sources */,
 				5219938029B9253E0058F9BC /* ContentView.swift in Sources */,
 				521993CE29B92FD30058F9BC /* ViewModelErrorAlertViewModifier.swift in Sources */,
 				521993C529B92F530058F9BC /* Extension+Color.swift in Sources */,
@@ -416,12 +471,17 @@
 				521993D729B9310F0058F9BC /* LoginViewModelError.swift in Sources */,
 				521993DD29B931860058F9BC /* LoginService.swift in Sources */,
 				521993CC29B92FC90058F9BC /* TextFieldModifier.swift in Sources */,
+				521993ED29B9D34B0058F9BC /* PostListView.swift in Sources */,
 				521993D329B930E90058F9BC /* LoginView.swift in Sources */,
 				521993B529B92DD90058F9BC /* AppConstant.swift in Sources */,
+				521993E929B9D33C0058F9BC /* PostModel.swift in Sources */,
 				521993BA29B92E6D0058F9BC /* Keychain.swift in Sources */,
 				5219937E29B9253E0058F9BC /* PostsAppApp.swift in Sources */,
+				521993F329B9D45F0058F9BC /* HeartView.swift in Sources */,
+				521993E329B9D3110058F9BC /* PostRequest.swift in Sources */,
 				521993C329B92F440058F9BC /* Extension+View.swift in Sources */,
 				521993D529B931040058F9BC /* LoginViewModel.swift in Sources */,
+				521993F129B9D35E0058F9BC /* PostListViewModelError.swift in Sources */,
 				5219938A29B925420058F9BC /* PostsApp.xcdatamodeld in Sources */,
 				521993DB29B9317F0058F9BC /* LoginRequest.swift in Sources */,
 			);
