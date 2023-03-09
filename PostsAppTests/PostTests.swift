@@ -58,13 +58,16 @@ final class PostTests: XCTestCase {
                 break
             }
         }
-        
-        let request = postListRequest(userId: "1")
+        let userId = "1"
+        let request = postListRequest(userId: userId)
         viewModel.postService.getPostList(request)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: completionHandler, receiveValue: { postListResponse in
                 XCTAssertNotNil(postListResponse)
-                XCTAssertTrue(postListResponse.count > 0)
+                if postListResponse.count > 0 {
+                    XCTAssertNotEqual(postListResponse[0].id, nil)
+                    XCTAssertEqual(postListResponse[0].userId.description, userId)
+                }
             })
             .store(in: &bindings)
         wait(for: [expectation], timeout: 10)
@@ -117,4 +120,42 @@ final class PostTests: XCTestCase {
         XCTAssertFalse(favouriteListAfterRemove.contains(post.id.description))
     }
 
+    func testPostCommentList() {
+        
+        let expectation = self.expectation(description: "Wait for testPostCommentList to complete")
+        let completionHandler: (Subscribers.Completion<APIError>) -> Void = {completion in
+            switch completion {
+            case .failure(let error):
+                switch error {
+                case .network(let msg):
+                    XCTAssert(msg is URLError)
+                    expectation.fulfill()
+                case .decoding(let msg):
+                    XCTAssert(msg is DecodingError)
+                    expectation.fulfill()
+                    break
+                case .other(_):
+                    expectation.fulfill()
+                    break
+                }
+            case .finished:
+                expectation.fulfill()
+                break
+            }
+        }
+        
+        let postId = "1"
+        let request = postCommentListRequest(postId: postId)
+        viewModel.postService.getPostCommentList(request)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: completionHandler, receiveValue: {commentListResponse in
+                XCTAssertNotNil(commentListResponse)
+                if commentListResponse.count > 0 {
+                    XCTAssertNotEqual(commentListResponse[0].postID, nil)
+                    XCTAssertEqual(commentListResponse[0].postID.description, postId)
+                }
+            })
+            .store(in: &bindings)
+        wait(for: [expectation], timeout: 10)
+    }
 }

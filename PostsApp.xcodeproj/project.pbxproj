@@ -181,8 +181,7 @@
 				521993D129B930A70058F9BC /* Helpers */,
 				521993D029B9305D0058F9BC /* Persistence */,
 				521993CF29B930130058F9BC /* ViewModifier */,
-				521993DF29B931DB0058F9BC /* Login */,
-				521993F629BA07FB0058F9BC /* Posts */,
+				5248C83D29BA6ACB0040072E /* AppModules */,
 				5219938329B925420058F9BC /* Preview Content */,
 			);
 			path = PostsApp;
@@ -346,6 +345,15 @@
 				5219940129BA20FB0058F9BC /* PostCommentListViewModelError.swift */,
 			);
 			path = PostComment;
+			sourceTree = "<group>";
+		};
+		5248C83D29BA6ACB0040072E /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				521993DF29B931DB0058F9BC /* Login */,
+				521993F629BA07FB0058F9BC /* Posts */,
+			);
+			path = AppModules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -676,21 +684,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PostsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = GDU9F2QV77;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PostsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mdoc.testing3;
+				PRODUCT_BUNDLE_IDENTIFIER = app.midhun.PostsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -707,21 +714,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PostsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = GDU9F2QV77;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PostsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mdoc.testing3;
+				PRODUCT_BUNDLE_IDENTIFIER = app.midhun.PostsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

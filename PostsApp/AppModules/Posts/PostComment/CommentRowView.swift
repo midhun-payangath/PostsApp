@@ -11,23 +11,18 @@ struct CommentRowView: View {
     var comment: CommentModel
     
     var body: some View {
-        VStack {
-            ZStack {
-                Color.systemGray6
-                VStack(alignment: .leading, spacing: 2) {
-                    HStack(alignment: .center) {
-                        Text(comment.name)
-                            .font(.subheadline)
-                    }
-                    VStack(alignment: .leading) {
-                        Text(comment.body)
-                            .font(.body)
-                    }
-                }
-                .padding(10)
+        ZStack {
+            Color.systemGray6
+            VStack(alignment: .leading, spacing: 5) {
+                Text(comment.name)
+                    .font(.body)
+                Text(comment.body)
+                    .font(.footnote)
             }
-            .cornerRadius(5)
+            .frame(maxWidth:.infinity,maxHeight:.infinity,alignment:.topLeading)
+            .padding()
         }
+        .cornerRadius(5)
         .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 0))
     }
 }

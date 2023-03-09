@@ -15,7 +15,7 @@ struct PostCommentListView: View {
     @StateObject private var viewModel = PostCommentListViewModel()
     
     var body: some View {
-        VStack() {
+        VStack {
             List {
                 PostRowView(post: $postDetail, onFavouriteToggled: onFavouriteToggled)
                 ForEach(viewModel.comments) { comment in
