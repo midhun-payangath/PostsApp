@@ -10,10 +10,12 @@ import Combine
 import CoreData
 
 typealias getPostListPublisher = AnyPublisher<[PostModel], APIError>
+typealias getPostCommentListPublisher = AnyPublisher<[CommentModel], APIError>
 
 protocol PostServiceProtocol {
     var apiClient: APIService { get }
     func getPostList(_ request: postListRequest) -> getPostListPublisher
+    func getPostCommentList(_ request: postCommentListRequest) -> getPostCommentListPublisher
 }
 
 protocol PostPersistencServiceProtocol {
@@ -29,6 +31,9 @@ struct PostService: PostServiceProtocol, PostPersistencServiceProtocol {
     
     
     func getPostList(_ request: postListRequest) -> getPostListPublisher {
+        return apiClient.publisher(for: request)
+    }
+    func getPostCommentList(_ request: postCommentListRequest) -> getPostCommentListPublisher {
         return apiClient.publisher(for: request)
     }
 }

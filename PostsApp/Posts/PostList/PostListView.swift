@@ -17,6 +17,7 @@ struct PostListView: View {
             List {
                 ForEach($viewModel.posts, id: \.id) { post in
                     NavigationLink(destination: {
+                        PostCommentListView(postDetail: post, onFavouriteToggled: viewModel.toggleFavouriteFor)
                     }, label: {
                         PostRowView(post: post, onFavouriteToggled: viewModel.toggleFavouriteFor)
                     })

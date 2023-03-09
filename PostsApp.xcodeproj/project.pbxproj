@@ -46,6 +46,11 @@
 		521993F129B9D35E0058F9BC /* PostListViewModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993F029B9D35D0058F9BC /* PostListViewModelError.swift */; };
 		521993F329B9D45F0058F9BC /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993F229B9D45E0058F9BC /* HeartView.swift */; };
 		521993F829BA085A0058F9BC /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993F729BA085A0058F9BC /* PostTests.swift */; };
+		521993FA29BA20C90058F9BC /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993F929BA20C90058F9BC /* CommentModel.swift */; };
+		521993FC29BA20DA0058F9BC /* CommentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993FB29BA20DA0058F9BC /* CommentRowView.swift */; };
+		521993FE29BA20E70058F9BC /* PostCommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993FD29BA20E70058F9BC /* PostCommentListView.swift */; };
+		5219940029BA20F00058F9BC /* PostCommentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521993FF29BA20F00058F9BC /* PostCommentListViewModel.swift */; };
+		5219940229BA20FB0058F9BC /* PostCommentListViewModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219940129BA20FB0058F9BC /* PostCommentListViewModelError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +116,11 @@
 		521993F029B9D35D0058F9BC /* PostListViewModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelError.swift; sourceTree = "<group>"; };
 		521993F229B9D45E0058F9BC /* HeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
 		521993F729BA085A0058F9BC /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
+		521993F929BA20C90058F9BC /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		521993FB29BA20DA0058F9BC /* CommentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowView.swift; sourceTree = "<group>"; };
+		521993FD29BA20E70058F9BC /* PostCommentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentListView.swift; sourceTree = "<group>"; };
+		521993FF29BA20F00058F9BC /* PostCommentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentListViewModel.swift; sourceTree = "<group>"; };
+		5219940129BA20FB0058F9BC /* PostCommentListViewModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentListViewModelError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,8 +331,21 @@
 			children = (
 				521993F429B9D7C20058F9BC /* PostService */,
 				521993F529BA07EA0058F9BC /* PostList */,
+				5219940329BA24DD0058F9BC /* PostComment */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		5219940329BA24DD0058F9BC /* PostComment */ = {
+			isa = PBXGroup;
+			children = (
+				521993F929BA20C90058F9BC /* CommentModel.swift */,
+				521993FB29BA20DA0058F9BC /* CommentRowView.swift */,
+				521993FD29BA20E70058F9BC /* PostCommentListView.swift */,
+				521993FF29BA20F00058F9BC /* PostCommentListViewModel.swift */,
+				5219940129BA20FB0058F9BC /* PostCommentListViewModelError.swift */,
+			);
+			path = PostComment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,7 +485,9 @@
 				521993D929B9311C0058F9BC /* UserModel.swift in Sources */,
 				521993B729B92DE30058F9BC /* StringContant.swift in Sources */,
 				521993CA29B92FC20058F9BC /* LoaderModifier.swift in Sources */,
+				521993FA29BA20C90058F9BC /* CommentModel.swift in Sources */,
 				521993B129B92D610058F9BC /* Configuration.swift in Sources */,
+				521993FC29BA20DA0058F9BC /* CommentRowView.swift in Sources */,
 				521993BE29B92EC30058F9BC /* APIError.swift in Sources */,
 				521993C029B92ECA0058F9BC /* APIService.swift in Sources */,
 				521993EB29B9D3430058F9BC /* PostRowView.swift in Sources */,
@@ -471,8 +496,10 @@
 				521993C529B92F530058F9BC /* Extension+Color.swift in Sources */,
 				521993BC29B92EB90058F9BC /* APIRequestBuilder.swift in Sources */,
 				521993C829B92FAA0058F9BC /* ButtonModifier.swift in Sources */,
+				5219940029BA20F00058F9BC /* PostCommentListViewModel.swift in Sources */,
 				521993D729B9310F0058F9BC /* LoginViewModelError.swift in Sources */,
 				521993DD29B931860058F9BC /* LoginService.swift in Sources */,
+				5219940229BA20FB0058F9BC /* PostCommentListViewModelError.swift in Sources */,
 				521993CC29B92FC90058F9BC /* TextFieldModifier.swift in Sources */,
 				521993ED29B9D34B0058F9BC /* PostListView.swift in Sources */,
 				521993D329B930E90058F9BC /* LoginView.swift in Sources */,
@@ -482,6 +509,7 @@
 				5219937E29B9253E0058F9BC /* PostsAppApp.swift in Sources */,
 				521993F329B9D45F0058F9BC /* HeartView.swift in Sources */,
 				521993E329B9D3110058F9BC /* PostRequest.swift in Sources */,
+				521993FE29BA20E70058F9BC /* PostCommentListView.swift in Sources */,
 				521993C329B92F440058F9BC /* Extension+View.swift in Sources */,
 				521993D529B931040058F9BC /* LoginViewModel.swift in Sources */,
 				521993F129B9D35E0058F9BC /* PostListViewModelError.swift in Sources */,
@@ -648,6 +676,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PostsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = GDU9F2QV77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PostsApp/Info.plist;
@@ -661,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.midhun.PostsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdoc.testing3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -678,6 +707,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PostsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = GDU9F2QV77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PostsApp/Info.plist;
@@ -691,7 +721,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.midhun.PostsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdoc.testing3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -21,5 +21,8 @@ struct StringContant {
         static let myPosts = "My Posts"
         static let logout = "Logout"
         static let selectOption = "Select an option"
+        static let comments = "Comments"        
+        static let postNotFound = "Post not found"
+        static let pleaseTryAgainLater = "Please try again later"
     }
 }

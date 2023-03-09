@@ -19,3 +19,16 @@ struct postListRequest : APIRequestBuilder {
     
     var userId: String
 }
+
+struct postCommentListRequest : APIRequestBuilder {
+    
+    var method: NetworkMethod {
+        return .get
+    }
+    
+    var path: String {
+        return "posts/\(postId)/comments"
+    }
+    
+    var postId: String
+}
